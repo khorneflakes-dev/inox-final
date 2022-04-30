@@ -1,0 +1,109 @@
+$navbar-colorText: white;
+$navbar-colorLogo: #ffffff;
+$navbar-fontText: 'Montserrat', sans-serif;
+$container-fontText: 'Alumni Sans', sans-serif;
+*{
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+.socials {
+    position: fixed;
+    z-index: 120;
+    font-size: 40px;
+    top: 85vh;    
+    left: 85vw;
+    display: flex;
+    width: 12vw;
+    img{
+        width: 85%;
+        filter: drop-shadow(-2px 2px 2px rgba(29, 29, 29, 0.685));
+    }
+}
+
+.navbar {
+    transition: top ease-in-out 0.5s;
+    position: fixed;
+    z-index: 110;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    background-color: rgba(82, 62, 62, 0.397);
+    border-bottom: 1px solid $navbar-colorText;
+
+    .logo {
+        padding-right: 0vw;
+        padding-left: 1vw;
+    }
+    .navbar-options{
+        flex: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5vh;
+        font-family: $navbar-fontText;
+        
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            // &:active {
+            //     color: white;
+            // }
+            // &:visited {
+            //     color: white;
+            // }
+
+        }
+
+        .main-logo{
+            img{
+                height: 6.5vh;
+            }
+        }
+
+    }
+}
+.about {
+    padding-top: 15vh;
+    overflow: hidden;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    .descripcion {
+        display: flex;
+        padding-bottom: 10vh;
+
+        .texto {
+            display: flex;
+            height: 40vh;
+            width: 40vw;
+            flex-direction: column;
+            align-items: center;
+            .titulo {
+                width: 30vw;
+                font-size: 1vh;
+            }
+            .detalles {
+                padding-top: 3vh;
+                text-align: justify;
+                width: 30vw;
+                font-size: 3.5vh;
+            }
+        }
+        .about-imagen {
+            display: flex;
+            width: 30vw;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            border-radius: 20px;
+            align-items: center;
+            img {
+                width: 100%;
+                border-radius: 2vh;
+            }
+        }
+    }
+}

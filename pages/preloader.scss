@@ -1,0 +1,206 @@
+
+.preloader {
+	height: 100vh;
+	position: fixed;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	padding-left: 9vw;
+	padding-right: 9vw;
+	overflow: hidden;
+	height: 100vh;
+	transform: translateY(-100vh);
+	animation: preloader 6s;
+	.logo-main {
+		display: flex;
+		width: 18.5vw;
+		height: 50vh;
+		align-items: flex-end;
+		animation: preloader1 6s;
+		transform: translateY(-100vh);
+		img {
+			width: 100%;
+		}
+	}
+	.inox {
+		display: flex;
+		width: 35vw;
+		align-items: flex-end;
+		gap: 1vw;
+		height: 50vh;
+		padding-right: 2vw;
+		padding-left: 2vw;
+		overflow: hidden;
+		.i, .n, .o, .x{
+			img {
+				width: 100%;
+			}
+		}
+		.i {
+			animation: preloader2 6s;
+			transform: translateY(-100vh);
+		}
+		.n {
+			animation: preloader3 6s;
+			transform: translateY(-100vh);
+		}
+		.o {
+			animation: preloader4 6s;
+			transform: translateY(-100vh);
+		}
+		.x {
+			animation: preloader5 6s;
+			transform: translateY(-100vh);
+		}
+	}
+	.supply {
+		display: flex;
+		width: 28.2vw;
+		height: 25vh;
+		align-items: flex-start;
+		gap: 0.5vw;
+		padding-top: 15vh;
+		.s, .u, .p1, .p2, .l, .y {
+			img {
+				width: 100%;
+			}
+		}
+		.l {
+			transform: translateY(-6.5vh);
+		}
+		.s {
+			animation: preloader6 6s;
+			transform: translateY(-100vh);
+		}
+		.u {
+			animation: preloader7 6s;
+			transform: translateY(-100vh);
+		}
+		.p1 {
+			animation: preloader8 6s;
+			transform: translateY(-100vh);
+		}
+		.p2 {
+			animation: preloader9 6s;
+			transform: translateY(-100vh);
+		}
+		.l {
+			animation: preloader10 6s;
+			transform: translateY(-100vh);
+		}
+		.y {
+			animation: preloader11 6s;
+			transform: translateY(-100vh);
+		}
+		
+	}
+}
+
+
+// fase 1: del 1 al 11 ir hasta la posicion P1=vh:0 (1/33)
+// fase 2: 1 al 11 permanecer un tiempo en vh=0
+// fase 3: 2 al 11 avanzar a la derecha hasta vw:100
+// fase 4: 1 al 11 subir 100 vh
+@keyframes preloader {
+	0% {transform: translateY(0vh);}
+	83% {transform: translateY(0vh);}
+	100% {transform: translateY(-100vh);}
+}
+
+@keyframes preloader1 {
+	0% {transform: translateY(100vh);}
+	3% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	83% {transform: translateX(31.75vw);}
+	100% {transform: translateY(-100vh) translateX(31.75vw);}
+}
+
+@keyframes preloader2 {
+	0% {transform: translateY(100vh);}
+	0% {transform: translateY(100vh);}
+	6% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	80% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader3 {
+	0% {transform: translateY(100vh);}
+	3% {transform: translateY(100vh);}
+	9% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	77% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader4 {
+	0% {transform: translateY(100vh);}
+	6% {transform: translateY(100vh);}
+	12% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	74% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader5 {
+	0% {transform: translateY(100vh);}
+	9% {transform: translateY(100vh);}
+	15% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	71% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader6 {
+	0% {transform: translateY(100vh);}
+	12% {transform: translateY(100vh);}
+	18% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	68% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader7 {
+	0% {transform: translateY(100vh);}
+	15% {transform: translateY(100vh);}
+	21% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	65% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader8 {
+	0% {transform: translateY(100vh);}
+	18% {transform: translateY(100vh);}
+	24% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	62% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader9 {
+	0% {transform: translateY(100vh);}
+	21% {transform: translateY(100vh);}
+	27% {transform: translateY(0vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	59% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader10 {
+	0% {transform: translateY(100vh);}
+	24% {transform: translateY(100vh);}
+	30% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	56% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
+@keyframes preloader11 {
+	0% {transform: translateY(100vh);}
+	27% {transform: translateY(100vh);}
+	33% {transform: translateY(0vh);}
+	50% {transform: translateY(0vh);}
+	53% {transform: translateX(100vw);}
+	100% {transform: translateY(-100vh) translateX(100vw);}
+}
