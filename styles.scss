@@ -651,7 +651,7 @@ body {
     .homecito {
         width: 100%;
         z-index: 100;
-        height: 250vh;
+        height: 320vh;
 
         .homecito-background {
             position: sticky;
@@ -672,25 +672,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(43, 0, 0);
+    background-color: rgb(107, 107, 107);
 }
 
 .home-frame2 {
     position: relative;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     background-color: white;
     justify-content: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
 
     .title {
         font-family: $fuente-texto;
-        font-size: 2vh;
+        font-size: 2.5vh;
+        font-weight: 100;
+        color: rgba(63, 63, 63, 0.89);
     }
 
     .subtitle {
+        padding-top: 2vh;
         font-family: $fuente-titulos;
-        font-size: 2vh;
+        font-size: 2.6vh;
+        font-weight: 600;
+        color: rgb(43, 43, 43);
+    }
+    .description {
+        padding-top: 5vh;
+        display: flex;
+        font-family: $fuente-texto;
+        font-size: 2.4vh;
+        justify-content: center;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.658);
     }
 }
 
@@ -739,7 +755,7 @@ body {
             justify-content: center;
             &:hover {
                 .sector-fondo {
-                    transform: scale(1.2);
+                    transform: scale(1);
                 }
             }
             .sector-fondo {
@@ -749,6 +765,7 @@ body {
                 width: 18vw;
                 z-index: 10;
                 transition: 0.3s ease-in-out;
+                transform: scale(1.2);
                 filter: contrast(50%);
 
                 img {
@@ -843,5 +860,25 @@ body {
                 background-color: rgb(184, 7, 7);
             }
         }
+    }
+}
+
+.contador {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    .numero {
+        width: 5vw;
+        background-color: goldenrod;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $fuente-texto;
+        font-size: 10vh;
+        color: white;
     }
 }

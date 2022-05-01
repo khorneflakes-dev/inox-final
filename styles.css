@@ -791,7 +791,7 @@ body {
 .home-background .homecito {
   width: 100%;
   z-index: 100;
-  height: 250vh;
+  height: 320vh;
 }
 
 .home-background .homecito .homecito-background {
@@ -818,12 +818,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2b0000;
+  background-color: #6b6b6b;
 }
 
 .home-frame2 {
   position: relative;
-  height: 30vh;
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,16 +835,37 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 .home-frame2 .title {
   font-family: "Montserrat", sans-serif;
-  font-size: 2vh;
+  font-size: 2.5vh;
+  font-weight: 100;
+  color: rgba(63, 63, 63, 0.89);
 }
 
 .home-frame2 .subtitle {
+  padding-top: 2vh;
   font-family: "Montserrat", sans-serif;
-  font-size: 2vh;
+  font-size: 2.6vh;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+.home-frame2 .description {
+  padding-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.658);
 }
 
 .home-frame3 {
@@ -912,8 +933,8 @@ body {
 }
 
 .home-frame3 .sectores .sector:hover .sector-fondo {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .home-frame3 .sectores .sector .sector-fondo {
@@ -924,6 +945,8 @@ body {
   z-index: 10;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-filter: contrast(50%);
           filter: contrast(50%);
 }
@@ -1060,5 +1083,37 @@ body {
   font-weight: 600;
   border-radius: 1vh;
   background-color: #b80707;
+}
+
+.contador {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 75vh;
+}
+
+.contador .numero {
+  width: 5vw;
+  background-color: goldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10vh;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
