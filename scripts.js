@@ -1,6 +1,5 @@
 let ubicacionPrincipal = window.pageYOffset;
 let factor = 0.5
-let cantidad = 0
 window.onscroll = function () {
     let Desplazamiento_Actual = window.pageYOffset;
     if (window.pageYOffset >= 0 && window.pageYOffset < screen.height * factor) {
@@ -23,22 +22,37 @@ window.onscroll = function () {
         document.getElementById('options2').style.color = '#081E36'
         document.getElementById('options3').style.color = '#081E36'
         document.getElementById('options4').style.color = '#081E36'
-        document.getElementById('logo').style.opacity = '50%'
+        document.getElementById('logo').style.opacity = '100%'
     }
 
     ubicacionPrincipal = Desplazamiento_Actual;
 
 }
-window.onscroll = function () {
-    if (window.pageYOffset >= 2900) {
-        document.getElementById('numero').textContent = '666';
-    }
+let cantidad = 0
+
+const contadores = {
+    cantidad1: 1200,
+    tiempo1: 300,
+    cantidad2: 600,
+    tiempo2: 400,
+}
+const demo = ( demo2 ) => {
+    return demo2+2;
 }
 
-let tiempo = setInterval(() => {
-    cantidad += 1
-    numero.textContent = cantidad
-    if (cantidad === 290) {
-        clearInterval(tiempo)
+const tiempo = setInterval(() => {
+
+    if (window.pageYOffset >= 2800) {
+        cantidad += 1
+        numero1.textContent = cantidad
+        if (cantidad === 300) {
+            clearInterval(tiempo)
+        }
+
     }
-}, 10);
+}, 4);
+
+console.log(contadores.tiempo1)
+console.log(demo(1500))
+// esta parte mide el tiempo en milisegundos
+// falta configurar la parte de screen.height para hacer la funcion responsive
