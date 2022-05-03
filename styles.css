@@ -36,14 +36,16 @@ body {
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
   position: fixed;
-  z-index: 110;
+  z-index: 510;
   width: 100vw;
   height: 9vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid white;
-  font-family: 'Baloo 2', cursive;
+  background: rgba(255, 255, 255, 0.89);
+  -webkit-backdrop-filter: blur(0.75rem);
+          backdrop-filter: blur(0.75rem);
+  border-bottom: 1px solid rgba(82, 82, 82, 0.333);
 }
 
 .navbar .logo {
@@ -69,7 +71,7 @@ body {
 }
 
 .navbar .navbar-options a {
-  color: white;
+  color: #081E36;
   cursor: pointer;
   text-decoration: none;
   font-size: 3.2vh;

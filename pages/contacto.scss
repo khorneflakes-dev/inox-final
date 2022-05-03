@@ -46,7 +46,7 @@ body {
 	width: 100vw;
 	height: 8.2vh;
 	display: flex;
-	background: rgba(255, 255, 255, 0.92);
+	background: rgba(255, 255, 255, 0.89);
 	backdrop-filter: blur(0.75rem);
 	border-bottom: 1px solid rgba(82, 82, 82, 0.333);
 
@@ -1016,3 +1016,27 @@ body {
 	font-size: 6vh;
 	color: white;
 }	
+
+.prueba {
+	font-size: 20vh;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: $fuente-texto;
+	.texto {
+		img {
+
+			backdrop-filter: blur(1.5rem);
+		}
+
+	}
+}
+.fondo-prueba {
+	position: fixed;
+	height: 200vh;
+	img {
+		height: 100%;
+	}
+}

@@ -46,12 +46,13 @@ body {
 .navbar {
     transition: ease-in-out 0.5s;
     position: fixed;
-    z-index: 110;
+    z-index: 510;
     width: 100vw;
     height: 9vh;
     display: flex;
-    border-bottom: 1px solid $navbar-colorText;
-    font-family: 'Baloo 2', cursive;
+	background: rgba(255, 255, 255, 0.89);
+	backdrop-filter: blur(0.75rem);
+	border-bottom: 1px solid rgba(82, 82, 82, 0.333);
 
     .logo {
         padding-right: 0vw;
@@ -67,7 +68,7 @@ body {
         font-family: 'Bebas Neue', cursive;
 
         a {
-            color: white;
+            color: #081E36;
             cursor: pointer;
             text-decoration: none;
             font-size: 3.2vh;
