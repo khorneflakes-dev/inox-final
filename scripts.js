@@ -43,7 +43,7 @@ const contadores = {
 
 const tiempo1 = setInterval(() => {
 
-    if (window.pageYOffset >= 2800) {
+    if (window.pageYOffset >= screen.height * 2) {
         cantidad_1 += 100
         numero1.textContent = cantidad_1
         if (cantidad_1 >= contadores.cantidad1) {
@@ -55,7 +55,7 @@ const tiempo1 = setInterval(() => {
 
 const tiempo2 = setInterval(() => {
 
-    if (window.pageYOffset >= 2800) {
+    if (window.pageYOffset >= screen.height * 2) {
         cantidad_2 += 10
         numero2.textContent = cantidad_2 
         if (cantidad_2 >= contadores.cantidad2) {
@@ -67,7 +67,7 @@ const tiempo2 = setInterval(() => {
 
 const tiempo3 = setInterval(() => {
 
-    if (window.pageYOffset >= 2800) {
+    if (window.pageYOffset >= screen.height * 2) {
         cantidad_3 += 10
         numero3.textContent = cantidad_3
         if (cantidad_3 >= contadores.cantidad3) {
