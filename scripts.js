@@ -34,18 +34,18 @@ let cantidad_3 = 0
 
 const contadores = {
     cantidad1: 8000,
-    tiempo1: 0.375,
+    tiempo1: 37.5,
     cantidad2: 250,
-    tiempo2: 12,
+    tiempo2: 120,
     cantidad3: 400,
-    tiempo3: 7.5,
+    tiempo3: 75,
 }
 
 const tiempo1 = setInterval(() => {
 
     if (window.pageYOffset >= 2800) {
-        cantidad_1 += 10
-        numero1.textContent = '+' + cantidad_1 + ' Productos'
+        cantidad_1 += 100
+        numero1.textContent = cantidad_1
         if (cantidad_1 >= contadores.cantidad1) {
             clearInterval(tiempo1)
         }
@@ -56,8 +56,8 @@ const tiempo1 = setInterval(() => {
 const tiempo2 = setInterval(() => {
 
     if (window.pageYOffset >= 2800) {
-        cantidad_2 += 1
-        numero2.textContent = '+' + cantidad_2 + ' Empresas beneficiadas'
+        cantidad_2 += 10
+        numero2.textContent = cantidad_2 
         if (cantidad_2 >= contadores.cantidad2) {
             clearInterval(tiempo2)
         }
@@ -68,8 +68,8 @@ const tiempo2 = setInterval(() => {
 const tiempo3 = setInterval(() => {
 
     if (window.pageYOffset >= 2800) {
-        cantidad_3 += 1
-        numero3.textContent = '+' + cantidad_3 + ' Soluciones'
+        cantidad_3 += 10
+        numero3.textContent = cantidad_3
         if (cantidad_3 >= contadores.cantidad3) {
             clearInterval(tiempo3)
         }
