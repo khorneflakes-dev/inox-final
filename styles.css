@@ -917,18 +917,41 @@ body {
   height: 8vh;
 }
 
+.home-frame3 .arrow1, .home-frame3 .arrow2 {
+  cursor: pointer;
+}
+
+.home-frame3 .sectores-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-frame3 .sectores-main {
+  width: 83.6vw;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .home-frame3 .sectores {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90vw;
-  height: 40vh;
+  width: 167.2vw;
+  height: 16.72vw;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .home-frame3 .sectores .sector {
   position: relative;
-  width: 18vw;
-  height: 40vh;
+  width: 16.72vw;
+  height: 16.72vw;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -77,9 +77,30 @@ const tiempo3 = setInterval(() => {
     }
 }, contadores.tiempo3);
 
-
-
-console.log(contadores.tiempo1)
-console.log(demo(1500))
 // esta parte mide el tiempo en milisegundos
 // falta configurar la parte de screen.height para hacer la funcion responsive
+
+// slider 
+let posicionInicial = 0
+
+// translateX(-cantidad vw)
+
+function arrow1 () {
+    if (posicionInicial == 0) {
+        posicionInicial += 0
+    }
+    else {
+        posicionInicial += 16.72
+    }
+    document.getElementById('sectores').style.transform = "translateX(" +posicionInicial + "vw)"
+}
+
+function arrow2 () {
+    if (posicionInicial == -83.6) {
+        posicionInicial += 0
+    }
+    else {
+        posicionInicial -= 16.72
+    }
+    document.getElementById('sectores').style.transform = "translateX(" +posicionInicial + "vw)"
+}
