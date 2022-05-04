@@ -871,6 +871,8 @@ body {
                 font-family: $fuente-texto;
                 font-weight: 300;
                 color: rgba(0, 0, 0, 0.664);
+                font-size: 1.6vh;
+                line-height: 2.4vh;
             }
             .button {
                 margin-top: 3vh;
@@ -906,6 +908,41 @@ body {
             font-size: 4vh;
             color: white;
             align-items: center;
+        }
+    }
+}
+
+.home-frame6 {
+    display: flex;
+    position: relative;
+    background-color: white;
+    height: 50vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    .title {
+        margin-top: 3vw;
+        margin-bottom: 1vw;
+        color: rgba(0, 0, 0, 0.61);
+        display: flex;
+        font-family: $fuente-titulos;
+        font-size: 1.1vw;
+    }
+    .home-marcas {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2vw;
+        gap: 2vw;
+        justify-content: center;
+        .marca {
+            margin: 0;
+            width: 6vw;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+            }
         }
     }
 }

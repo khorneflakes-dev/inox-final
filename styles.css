@@ -1097,6 +1097,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.664);
+  font-size: 1.6vh;
+  line-height: 2.4vh;
 }
 
 .home-frame4 .home-servicios .home-servicio .button {
@@ -1152,5 +1154,61 @@ body {
   font-size: 4vh;
   color: white;
   align-items: center;
+}
+
+.home-frame6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: white;
+  height: 50vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20vh;
+}
+
+.home-frame6 .title {
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+  color: rgba(0, 0, 0, 0.61);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1vw;
+}
+
+.home-frame6 .home-marcas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 2vw;
+          column-gap: 2vw;
+  gap: 2vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-frame6 .home-marcas .marca {
+  margin: 0;
+  width: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-frame6 .home-marcas .marca img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
