@@ -1353,4 +1353,63 @@ body {
   width: 100%;
   width: 7vw;
 }
+
+.main-demo4 {
+  background-color: #0e0e0e;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main-demo4 .demo4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  gap: 0.1vw;
+  width: 400vw;
+}
+
+.main-demo4 .demo4:hover .order1 {
+  -webkit-transform: translateX(20vw);
+          transform: translateX(20vw);
+}
+
+.main-demo4 .demo4 .order1, .main-demo4 .demo4 .order2, .main-demo4 .demo4 .order3, .main-demo4 .demo4 .order4, .main-demo4 .demo4 .order5, .main-demo4 .demo4 .order6, .main-demo4 .demo4 .order7, .main-demo4 .demo4 .order8, .main-demo4 .demo4 .order9, .main-demo4 .demo4 .order10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  width: 20vw;
+  height: 20vw;
+  background-color: #141414;
+  border-radius: 5px;
+  font-size: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.demo2demo {
+  height: 20vh;
+  background-color: gold;
+}
+
+.demo2text {
+  height: 20vh;
+  font-size: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 /*# sourceMappingURL=contacto.css.map */

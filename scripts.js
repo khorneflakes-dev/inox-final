@@ -9,11 +9,15 @@ window.onscroll = function () {
         // document.getElementById('options3').style.color = 'white'
         // document.getElementById('options4').style.color = 'white'
         document.getElementById('logo').style.opacity = '100%'
+        document.getElementById('navbar').style.top = '-11vh'
+        document.getElementById('socials').style.transform = 'translateY(15vh)'
+
 
     }
 
     else if (ubicacionPrincipal >= Desplazamiento_Actual) {
         document.getElementById('navbar').style.top = '0'
+
     }
     else if (window.pageYOffset >= screen.height * factor) {
         // document.getElementById('navbar').style.backgroundColor = 'white'
@@ -23,6 +27,8 @@ window.onscroll = function () {
         document.getElementById('options3').style.color = '#081E36'
         document.getElementById('options4').style.color = '#081E36'
         document.getElementById('logo').style.opacity = '100%'
+        document.getElementById('socials').style.transform = 'translateY(0vh)'
+
     }
 
     ubicacionPrincipal = Desplazamiento_Actual;
@@ -104,3 +110,16 @@ function arrow2 () {
     }
     document.getElementById('sectores').style.transform = "translateX(" +posicionInicial + "vw)"
 }
+
+// let i = 0
+
+
+// const demofunction = setInterval(() => {
+
+//     i ++
+    
+// }, 100);
+
+// const demofunction2 = setInterval(() => {
+//     i += 0
+// })
