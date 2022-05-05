@@ -67,7 +67,6 @@ body::-webkit-scrollbar-thumb {
   -webkit-backdrop-filter: blur(0.75rem);
           backdrop-filter: blur(0.75rem);
   border-bottom: 1px solid rgba(82, 82, 82, 0.333);
-  top: -11vh;
 }
 
 .navbar .logo {
@@ -115,6 +114,53 @@ body::-webkit-scrollbar-thumb {
   background-color: #2a2d3a;
 }
 
+.container .container-texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  background-color: #081e369d;
+}
+
+.container .container-texto .logo {
+  margin-top: 10vh;
+  height: 20vh;
+}
+
+.container .container-texto .logo img {
+  height: 100%;
+}
+
+.container .container-texto .title {
+  height: 20vh;
+}
+
+.container .container-texto .title img {
+  height: 100%;
+}
+
+.container .container-texto .texto {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 .container .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,8 +197,10 @@ body::-webkit-scrollbar-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100vh;
+  width: 90%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 90vh;
   color: #ffffff;
   font-size: 6vh;
   z-index: 4;
@@ -161,6 +209,8 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: end;
           align-items: flex-end;
   font-family: 'Bebas Neue', cursive;
+  background-color: #081e362f;
+  padding-bottom: 10vh;
 }
 
 .frame2 {
@@ -960,6 +1010,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1vh;
   color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+.home-frame3 .button a {
+  text-decoration: none;
+  color: white;
 }
 
 .home-frame3 .separador-sector {

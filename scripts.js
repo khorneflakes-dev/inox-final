@@ -9,7 +9,7 @@ window.onscroll = function () {
         // document.getElementById('options3').style.color = 'white'
         // document.getElementById('options4').style.color = 'white'
         document.getElementById('logo').style.opacity = '100%'
-        document.getElementById('navbar').style.top = '-11vh'
+        document.getElementById('navbar').style.top = '0vh'
         document.getElementById('socials').style.transform = 'translateY(15vh)'
 
 
